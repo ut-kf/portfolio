@@ -8,5 +8,12 @@
 <body>
   <h1>あいう</h1>
   <a href="about.html">自己紹介ページへ</a>
+  <button onclick="showMessage()">クリックしてね</button>
+  <p id="message"></p>
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent = "こんにちは！JavaScriptが動いています🎉";
+    }
+  </script>
 </body>
 </html>
