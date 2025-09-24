@@ -2,18 +2,34 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ポートフォリオです">
   <title>あいう</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>あいう</h1>
-  <a href="about.html">自己紹介ページへ</a>
-  <button onclick="showMessage()">クリックしてね</button>
-  <p id="message"></p>
-  <script>
-    function showMessage() {
-      document.getElementById("message").textContent = "こんにちは！JavaScriptが動いています🎉";
-    }
-  </script>
+<div id="loading"></div>
+<header>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <div class="wrap">
+    <section>
+      <h1>ポートフォリオです</h1>
+    </section>
+    <section>
+      <button onclick="showMessage()">クリックしてね</button>
+    </section>
+  </div>
+</main>
+<div></div>
+<footer></footer>
+<script src="script.js"></script>
 </body>
 </html>
