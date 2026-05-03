@@ -6,30 +6,44 @@
   <meta name="description" content="ポートフォリオです">
   <title>あいう</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-<div id="loading"></div>
-<header>
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#works">Works</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<div id="loading" class="loading">
+  <img class="loading__spinner" src="assets/images/loading.png" alt="">
+</div>
+<header id="header" class="site-header">
+  <div class="site-header__inner">
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+        <li class="navigation__item"><a href="#works" class="navigation__link">Works</a></li>
+        <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 <main>
   <div class="wrap">
-    <section>
-      <h1>ポートフォリオです</h1>
+    <section id="about" class="about">
+      <h1 class="about__portfolio">ポートフォリオです</h1>
     </section>
-    <section>
-      <button onclick="showMessage()">クリックしてね</button>
+    <section id="works">
+      <h1 class="works__coming"></h1>
+    </section>
+    <section id="contact" class="contact">
+      <form class="contact__form">
+        <label class="contact__label">お名前<input type="text" name="name" required class="contact__input"></label>
+        <label class="contact__label">メールアドレス<input type="email" name="email" required class="contact__input"></label>
+        <label class="contact__label">メッセージ<textarea name="message" required class="contact__textarea"></textarea></label>
+        <button type="submit" class="contact__button">送信</button>
+      </form>
     </section>
   </div>
 </main>
-<div></div>
-<footer></footer>
-<script src="script.js"></script>
+<div class="modal js-modal"></div>
+<footer id="footer" class="site-footer">
+  <div class="site-footer__copyright">Copyright</div>
+</footer>
 </body>
 </html>
