@@ -1,49 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ポートフォリオです">
-  <title>あいう</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <title>BUY SOME SHOES | OFFICIAL SITE</title>
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <!-- Tailwind -->
+  <link rel="stylesheet" href="output.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
 </head>
-<body>
-<div id="loading" class="loading">
-  <img class="loading__spinner" src="assets/images/loading.png" alt="">
-</div>
-<header id="header" class="site-header">
-  <div class="site-header__inner">
-    <nav class="navigation">
-      <ul class="navigation__list">
-        <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
-        <li class="navigation__item"><a href="#works" class="navigation__link">Works</a></li>
-        <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
-      </ul>
+
+<body class="font-punk bg-white text-gray-900">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur">
+    <nav class="max-w-5xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="index.html" class="w-32 md:w-40 flex-shrink-0 mr-4">
+        <img src="assets/images/mv_buy-some-shoes.png" alt="BUY SOME SHOES" class="w-full h-auto">
+      </a>
+      <div class ="flex gap-0">
+        <a href="news.html" class="text-ppCyan text-lg inline-block text-center px-3 py-2 rounded transition hover:bg-ppCyan hover:text-black">NEWS</a>
+        <a href="live.html" class="text-ppPink text-lg inline-block text-center px-3 py-2 rounded transition hover:bg-ppPink hover:text-black">LIVE</a>
+        <a href="about.html" class="text-ppYellow text-lg inline-block text-center px-3 py-2 rounded transition hover:bg-ppYellow hover:text-black">ABOUT</a>
+      </div>
     </nav>
-  </div>
-</header>
-<main>
-  <div class="wrap">
-    <section id="about" class="about">
-      <h1 class="about__portfolio">ポートフォリオです</h1>
-    </section>
-    <section id="works">
-      <h1 class="works__coming"></h1>
-    </section>
-    <section id="contact" class="contact">
-      <form class="contact__form">
-        <label class="contact__label">お名前<input type="text" name="name" required class="contact__input"></label>
-        <label class="contact__label">メールアドレス<input type="email" name="email" required class="contact__input"></label>
-        <label class="contact__label">メッセージ<textarea name="message" required class="contact__textarea"></textarea></label>
-        <button type="submit" class="contact__button">送信</button>
-      </form>
-    </section>
-  </div>
-</main>
-<div class="modal js-modal"></div>
-<footer id="footer" class="site-footer">
-  <div class="site-footer__copyright">Copyright</div>
-</footer>
+  </header>
+
+  <!-- Main Visual -->
+  <section class="w-full pt-32">
+    <div class="max-w-5xl mx-auto px-6" data-aos="fade-up">
+      <h1 class="w-full">
+        <img src="assets/images/mv_buy-some-shoes.png" alt="BUY SOME SHOES" class="w-full h-auto">
+      </h1>
+    </div>
+  </section>
+
+  <!-- NEWS Section -->
+  <section class="max-w-4xl mx-auto px-6 py-16 relative">
+    <h2 class="text-3xl font-bold mb-8 text-ppCyan" data-aos="fade-up">LATEST NEWS</h2>
+    <div class="space-y-6">
+      <div class="border border-gray-200 rounded-xl p-6 shadow-sm" data-aos="fade-up">
+        <p class="text-sm text-gray-500">2026.05.01</p>
+        <h3 class="text-xl font-bold mt-1">新曲「ELECTRIC HEART」配信開始</h3>
+        <a href="news.html" class="inline-block mt-4 px-5 py-2 bg-ppCyan text-black font-bold rounded hover:opacity-80">
+          続きを読む
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- LIVE Section -->
+  <section class="bg-gray-50 py-16">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-8 text-ppPink" data-aos="fade-up">NEXT LIVE</h2>
+      <div class="border border-gray-200 rounded-xl p-6 shadow-sm" data-aos="fade-up">
+        <p class="text-sm text-gray-500">2026.06.12 (Fri)</p>
+        <h3 class="text-2xl font-bold mt-1">NEON NIGHT TOUR 2026 - TOKYO</h3>
+        <p class="mt-2 text-gray-700">渋谷 CLUB QUATTRO</p>
+        <a href="live.html" class="inline-block mt-4 px-5 py-2 bg-ppPink text-black font-bold rounded hover:opacity-80">
+          詳細を見る
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- STORE Section -->
+  <section class="max-w-4xl mx-auto px-6 py-16 relative">
+    <h2 class="text-3xl font-bold mb-8 text-ppYellow" data-aos="fade-up">ABOUT US</h2>
+    <div class="space-y-6">
+      <div class="border border-gray-200 rounded-xl p-6 shadow-sm" data-aos="fade-up">
+        <h3 class="text-xl font-bold mt-1">We are BUY SOME SHOES!</h3>
+        <p class="mt-2 text-gray-700">音と空気感を大事にするバンドです。新曲やライブ情報は随時アップしていくので、ぜひチェックしてね。</p>
+        <a href="about.html" class="inline-block mt-4 px-5 py-2 bg-ppYellow text-black font-bold rounded hover:opacity-80">
+          僕達を知る
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-10 text-gray-500 text-sm">
+    © 2026 BUY SOME SHOES
+  </footer>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init()</script>
 </body>
 </html>

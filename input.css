@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* Tailwind v4 のテーマ設定 */
+@theme {
+  --color-ppPurple: #a259ff;
+  --color-ppGreen: #00ff9d;
+  --color-ppBlue: #009dff;
+  --color-ppCyan: #00eaff;
+  --color-ppPink: #ff2ebd;
+  --color-ppYellow: #ffe600;
+
+  --font-punk: "Poppins", "Noto Sans JP", sans-serif;
+  --font-blackops: "Black Ops One", sans-serif;
+}
+
+/* 必要最小限のカスタムCSS（背景など追加する場合ここに書く） */
+/* 今は空でOK */
